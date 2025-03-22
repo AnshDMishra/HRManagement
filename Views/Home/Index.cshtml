@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5 text-center">
+    <!-- Animated Welcome Message -->
+    <h1 class="display-4 fw-bold text-primary welcome-text">Welcome to HR Management</h1>
+    <p class="lead">Manage Employees & Departments efficiently with our system.</p>
+
+    <!-- ASP.NET Core Learning Link -->
+    <!-- <p>Learn about <a href="https://learn.microsoft.com/aspnet/core" target="_blank">building Web apps with ASP.NET Core</a>.</p>-->
+
+    <hr class="my-4">
+
+    <!-- Navigation Buttons -->
+    <div class="d-flex justify-content-center gap-4 mt-4">
+        <a asp-controller="Employee" asp-action="Index" class="btn btn-lg btn-outline-primary">
+            <i class="fas fa-users"></i> Manage Employees
+        </a>
+        <a asp-controller="Department" asp-action="Index" class="btn btn-lg btn-outline-success">
+            <i class="fas fa-building"></i> Manage Departments
+        </a>
+    </div>
+</div>
+

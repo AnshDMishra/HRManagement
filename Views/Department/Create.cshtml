@@ -1,0 +1,40 @@
+﻿@model HRManagement.Models.Department
+
+@{
+    ViewData["Title"] = "Create Department";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg">
+            <div class="card-body">
+                <h3 class="card-title text-center text-primary">Create Department</h3>
+                <hr />
+
+                <form asp-action="Create" asp-controller="Department" method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <!-- Department Name Input -->
+                    <div class="form-group mb-3">
+                        <label asp-for="DepartmentName" class="form-label fw-bold">Department Name</label>
+                        <input asp-for="DepartmentName" class="form-control p-2" placeholder="Enter department name" autocomplete="off" />
+                        <span asp-validation-for="DepartmentName" class="text-danger"></span>
+                    </div>
+
+                    <!-- Create & Back to List Buttons -->
+                    <div class="text-center d-flex justify-content-center gap-3">
+                        <input type="submit" value="Create" class="btn btn-success px-4" />
+                        <a asp-action="Index" class="btn btn-secondary px-4">Back to List</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

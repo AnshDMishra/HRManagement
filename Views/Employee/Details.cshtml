@@ -1,0 +1,55 @@
+﻿@model HRManagement.Models.Employee
+
+@{
+    ViewData["Title"] = "Employee Details";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg">
+            <div class="card-body">
+                <h3 class="card-title text-center text-primary">Employee Details</h3>
+                <hr />
+
+                <dl class="row">
+                    <dt class="col-sm-4 text-secondary">Employee ID</dt>
+                    <dd class="col-sm-8 fw-bold">@Html.DisplayFor(model => model.Emp_ID)</dd>
+
+                    <dt class="col-sm-4 text-secondary">Name</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Emp_Name)</dd>
+
+                    <dt class="col-sm-4 text-secondary">Age</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Emp_Age)</dd>
+
+                    <dt class="col-sm-4 text-secondary">Gender</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Emp_Gender)</dd>
+
+                    <dt class="col-sm-4 text-secondary">Mobile</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Emp_Mobile)</dd>
+
+                    <dt class="col-sm-4 text-secondary">Salary</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Emp_Salary)</dd>
+
+                    <dt class="col-sm-4 text-secondary">Status</dt>
+                    <dd class="col-sm-8">
+                        <span class="badge @(Model.Emp_Status ? "bg-success" : "bg-danger")">
+                            @(Model.Emp_Status ? "Active" : "Inactive")
+                        </span>
+                    </dd>
+
+                    <dt class="col-sm-4 text-secondary">Department</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Department.DepartmentName)</dd>
+                </dl>
+
+                <div class="text-center mt-4 d-flex justify-content-center gap-3">
+                    <a asp-action="Edit" asp-route-id="@Model?.Emp_ID" class="btn btn-success px-4">
+                        <i class="fas fa-edit"></i> Edit
+                    </a>
+                    <a asp-action="Index" class="btn btn-secondary px-4">
+                        <i class="fas fa-arrow-left"></i> Back to List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
