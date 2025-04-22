@@ -7678,11 +7678,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Documents\\Net Projects\\Practice\\HRManagement\\HRManagement.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Documents\\Projects\\Github\\HRManagement\\HRManagement.csproj",
       "projectName": "HRManagement",
-      "projectPath": "C:\\Users\\HP\\Documents\\Net Projects\\Practice\\HRManagement\\HRManagement.csproj",
+      "projectPath": "C:\\Users\\HP\\Documents\\Projects\\Github\\HRManagement\\HRManagement.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Documents\\Net Projects\\Practice\\HRManagement\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Documents\\Projects\\Github\\HRManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
